@@ -1,0 +1,51 @@
+* prazna bilješka!
+ 
+
+*  defaultna vrijednost nula za sve korisnike----> za facebook korisnike mora bit 1!! 
+    -> dodala novu funkciju add_new_facebook_user za to pa u faceloginu treba ic u nju
+
+
+* log-out za fb usera // obvo bi trebalo radit i za fejs
+* ljepši url
+* provjera accessTokena u loginu (controller) a ne u view-u
+
+-------------------
+
+dodala u bazu u tablicu biljeske datoteke -> id_note (strani kljuc)
+digla file u biljeskama
+
+
+dodala opciju uređivanja bilješke (izmjena naslova contenta i fajla) ---> treba sredit tagove u novoj biljesci
+
+dodala brisanje biljeske
+
+u komentare u callback i configure dodala "univerzalne adrese"(configure bi sigurno ok trebo bit a callback nisam sigurna)
+--> ali i dalje nece fejs zbog prava:( 
+
+dodala autoincremente na biljeske_datoteke i popravila aitoincrement u dodaj novog usera i biljeske-datoteke da se ne trazi id
+
+stavit da bday nije nuzan zbog face logina
+
+
+u funkciji user_update_details() (noteservice) mi upit za update baze ne zeli nijedna varijanta
+
+
+kako se provjerava koji autoincrement je zadnji dodan?? 
+-> je li kiks u notescontroller ->newnote dodavanje datoteke dodaje za najveći id?
+-> je li se autoincrement ponasa da popunjava rupe tj kad izbrisem prcu i nestane id je li na njega ide 
+
+
+za username kod facebook usera na traku gdje se dojavljuje stavit ime i prezime a ne ovaj dugi username
+
+kod fejs usera stavila da se ne prikazije username u about ali popravit u update details gdje je value u pozadini stari username
+-> vidit sto tocno zelimo s tim
+
+
+sad kad nam je username fejs okej zelimo li ipak vratiti u headeru username a ne name za fejs?
+
+
+
+staviti ogranjčenje na ime prezime username....
+
+novi tag pri kreiranju bilješki
+

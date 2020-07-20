@@ -1,0 +1,16 @@
+google-keep
+
+- login 
+			* može se dodati nova oznaka
+			* pokazuju se stare oznake 
+			* klikom na bilo koju novu oznaku možemo promijeniti ime oznake ili je obrisati 
+	* svaka oznaka po
+<pre>$_FILES=Array
+(
+)
+<br>$_SESSION=Array
+(
+    [FBRLH_state] => c44191db901ab072e932262bec3af3e4
+    [username] => tomarga
+)
+</pre>

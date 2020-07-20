@@ -1,0 +1,18 @@
+sanitizacijaa!!
+<p>Hello, <?php
+echo htmlentities( $_GET['username'], ENT_QUOTES );
+?></p>
+
+
+jesam li validirala pass
+
+function validate( $user, $pass ) {
+2 $users = array(
+3 'pero' => 'perinasifra' ,
+4 'ana' => 'aninasifra' );
+5
+6 if( isset( $users[$user] ) && ( $users[$user] === $pass ) )
+7 return true;
+8 else
+9 return false;
+10 }

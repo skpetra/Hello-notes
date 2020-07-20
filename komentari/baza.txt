@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------------
+-----------------------------------  TABLICE  ---------------------------------------
+-------------------------------------------------------------------------------------
+
+KORISNICI: (popis svih korisnika i informacije o njima)
+	id: primarni ključ
+	username: string
+	password_hash
+	birth_date: datum rođenja (date, obavezno)
+	about: informacije koje korisnik može napisati o sebi (string, opcionalno)
+
+--------------------------------------------------------------------------------------
+
+BILJEŠKE: (popis bilješki i sadržaja)
+	id: primarni ključ
+	id_user
+	title: naslov (obavezan)
+	content: sadržaj bilješke
+	date: datum i vrijeme stvaranja bilješke
+
+---------------------------------------------------------------------------------------
+
+TAGOVI:	(popis svih tagova)
+	name  (jedinstveno ime, nema smisla imati dva taga istog imena)
+
+---------------------------------------------------------------------------------------
+
+ODNOS: (tablica iz koje vidimo koja bilješka pripada kojem tagu)
+	name: ime taga, primarni ključ
+	id: id bilješke, primarni ključ
+

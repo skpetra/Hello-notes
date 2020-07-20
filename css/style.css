@@ -1,0 +1,540 @@
+/*--------- Notes -----------------------*/
+
+input{
+	border: none;
+ 	border-bottom: 1px solid black;
+}
+
+div.okvir_biljeske{
+	background: #fffea3;
+	background-color: #fffea3;
+	background-image: linear-gradient(lightblue, white);
+	position: relative;
+	top: -300px;
+ 	animation-name: example;
+	animation-duration: 2.5s;
+	box-shadow: 10px 10px 5px grey;
+	word-wrap: break-word;
+	font-family: "Bad Script";
+	font-size: 22px;
+	border: 12px solid white;
+	display: inline-block;
+	width:250px;
+	height:250px;
+	margin: 10px;
+	position: relative;
+	vertical-align: middle;
+}
+@keyframes example{
+ 	from {left: 0px; top: 300px;}
+ 	to {left: 0px; top: -300px;}
+}
+
+
+/* New note */
+div.add_new_note{
+	position: absolute;
+	left: 41%;
+	top: 33%;
+	background: rgb(168, 7, 58);
+	opacity: 0.8;
+	padding: 2.3%;
+	text-align: center;
+	font-family: "Cinzel";
+}
+div.add_new_note input{
+	padding: 8px;
+	margin-bottom: 5px;
+}
+div.add_new_note button[type=submit]{
+	margin-top: 6px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+div.add_new_note h2{
+	color: white;
+	text-align: left;
+	margin-top: 8px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+div.add_new_note span{
+	background: white;
+	padding: 5.5px;
+	border-radius: 20px;
+}
+
+
+button{
+	background-color: white;
+	border: none;
+}
+
+form span.image-upload{
+	background-color:  white;
+	border: none;
+	padding:5.5px;
+	border-radius: 5px;
+}
+
+option{
+	height: 20px;
+}
+
+button.test{
+	padding:4px;
+	padding-top:3px;
+	padding-bottom:3px;
+	border-radius: 5px;
+}
+button#add_new_note, button#close, .tag_form button{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	padding:4px;
+}
+
+form a#close_user_details, a#close_update_note{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	padding:7px;
+}
+form button#close{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	padding:5px;
+}
+.center{
+	text-align:center;
+}
+
+
+/* User details */
+div.user_details, div.update_note{
+	position: absolute;
+	top: 33%;
+	background: rgb(168, 7, 58);
+	opacity: 0.8;
+	padding: 25px;
+	color: white;
+	left: 41%;
+}
+a#close_user_details{
+	color: white;
+	text-decoration:none;
+}
+div.update_user_details, div.update_pass{
+	position: absolute;
+	left: 350px;
+	top: 300px;
+	background: rgb(168, 7, 58);
+	opacity: 0.8;
+	padding: 25px;
+	color: white;
+	left: 41%;
+}
+div.update_user_details input{
+	color:black;
+}
+div.update_user_details button, div.update_user_details a, div.add_new_note button{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	padding:5.5px;
+}
+div.update_user_details input,  div.update_pass input, #collab{
+	background-color: white;
+	color: black;
+}
+
+
+/* Update, buttoni */
+div.update_pass button, div#popis button, div#popis_rc button{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	padding:6px;
+}
+div.update_note {
+	text-align: center;
+}
+
+
+/* Kolaboratori */
+div#popis, div#popis_rc{
+  padding: 8px;
+  position: absolute;
+	border: solid;
+  border-width: thick;
+  background-color: #b8a982;
+  text-align: center;
+  vertical-align: middle;
+}
+input#collab, input#remove_c{
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+
+/* Tag */
+div.tag_form{
+  	position: absolute;
+	left: 39%;
+	top: 33%;
+  	background-color: rgb(168, 7, 58);
+	opacity: 0.8;
+	padding: 2.3%;
+  	text-align: center;
+  	vertical-align: middle;
+	font-family: "Cinzel";
+	font-size: 18px;
+}
+#new_tag_input{
+	padding: 8px;
+	margin-bottom: 10px;
+}
+div.tag_form h2, div.tag_form p{
+	color: white;
+}
+div.tag_form p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+div#tag_list{
+  position: absolute;
+}
+
+div.div_help_reg{
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	left: 45%;
+}
+
+.id_made_by{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+h1#center{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+
+/* Search */
+input#search_input.search{
+	margin-top: 2%;;
+	width:60%;
+	padding-left: 2px;
+}
+input#search_input, input#search_button{
+	margin-left: 0.5em;
+	border-radius: 5em;
+	background-color:  rgba(0, 0, 0, 0.1);
+	margin:0;
+}
+
+body{
+	display: grid;
+	margin: 0;
+	padding:0;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-image: url('https://rp2.studenti.math.hr/~omaida/hellonotes/icons/login_background.jpg');
+	background-color: #ccd9df;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+
+/* Boja naslova */
+h1{
+
+	display: inline;
+	margin: auto;
+	top: 100px;
+	position: center;
+	color: rgb(168, 7, 58);
+	font-family: "Bad Script";
+	font-size: 40px;
+	font-weight: bold;
+}
+
+div .notes{
+	margin-left: 20%;
+	margin-right: 20%;
+	position: relative;
+	grid-area: middle;
+}
+
+/* naslov + search */
+.title{
+	padding-top: 25%;
+	grid-area: header;
+	padding: 30px;
+	text-align: center;
+	font-family: "Bad Script";
+	font-size: 18px;
+}
+
+/* Vertikalna linija */
+.vl{
+	border-left: 150px solid #f1f1f1;
+	opacity: 0.6;
+	height: 150%;
+	position: absolute;
+	left: 10%;
+	margin-left: -5%;
+	top: 0;
+}
+
+
+/* Navigacijska lista */
+ul{
+	list-style-type: none;
+	margin-top: 60px;
+	padding: 0px;
+	width: 13%;
+	height: 5%;
+	opacity: 0.8;
+}
+.nav, form li.nav a, li#tags_show.nav{
+	display: inline-grid;
+	color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	margin-top:2px;
+	font-family: "Cinzel";
+	font-size: 16px;
+}
+.nav a{
+  	color: black;
+	text-align: center;
+}
+.nav_lista, .nav_lista ul, .nav_lista form{
+	height: 300px;
+	grid-area: left;
+}
+/* Tagovi u navigacijskoj listi */
+.form_tags li.nav button{
+	background-color:  #f1f1f1;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	word-wrap: break-word;
+	margin-top: 2px;
+}
+li.nav{
+	padding:0;
+	margin-left:20%;
+}
+
+div.top_right{
+	margin-top: 0;
+	margin-left: 2%;
+	height: 20px;
+	display: inline-block;
+	font-family: "Cinzel";
+}
+div.top_right a#facebook_name{
+	margin-top: 2%;
+	color: rgb(168, 7, 58);
+}
+
+div.notes{
+	width: 90%;
+	padding-left: 8%;
+	margin-left: 8%;
+}
+
+form li.nav a:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 53%;
+	height: 15%;
+}
+li a:hover{
+	text-decoration: none;
+	text-align: center;
+}
+/* Navigacijska lista bez tagova */
+div.nav_lista li.nav a:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 7px;
+}
+
+a#facebook_name, .dropdown{
+	margin-left: 90%;
+	display: inline;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/* Za prikaz ucitavanja filea kao ikone */
+.image-upload > input{
+    display: none;
+}
+.image-upload img{
+    cursor: pointer;
+}
+
+
+/* Pocetna stranica - login register */
+div#start{
+	text-align: center;
+	margin: auto;
+	margin-top: 10%;
+	padding-bottom: 10px;
+	/* color: ; */
+}
+div .start_element{
+	margin: auto;
+	display: block;
+	border: 1px solid #9fa9b5;
+	width: 100px;
+	margin-bottom: 5px;
+	font-family: "Cinzel";
+	padding: 5px;
+
+}
+div .start_element a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Login i register */
+.login{
+	margin: auto;
+	margin-top: 45px;
+	text-align: center;
+}
+.login_input{
+	margin: auto;
+	border: 1px solid #9fa9b5;
+	width: 300px;
+	padding-bottom: 19.9167px;
+	font-family:"Cinzel";
+}
+.register_input{
+	margin: auto;
+	border: 1px solid #9fa9b5;
+	width: 350px;
+	font-family: "Cinzel";
+}
+button#log_in, button#register, button#fb_login{
+	background-color: rgba(0, 0, 0, 0.1);
+	border:none;
+	color:black;
+	padding: 10px;
+	font-family:"Cinzel";
+}
+button#log_in:hover, button#register:hover, button#fb_login:hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+button#help_reg.question{
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #9fa9b5;
+	width: 112px;
+	padding: 5px;
+}
+#fb_login a{
+	text-decoration: none;
+	color: black;
+}
+span.span_register input, span.span_login input{
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-bottom: 5px;
+	padding: 5px;
+}
+.login a, .title a{
+ 	text-decoration: none;
+}
+.poruka_o_gresci{
+	margin: auto;
+	text-align: center;
+	color: rgb(168,7,58);
+}
+
+
+/* User menu */
+.dropbtn{
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* linkovi */
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover{
+	background-color: #ddd;
+}
+.show{
+	display: block;
+}
+button#menu1.btn-primary{
+	background-color: rgba(0,0,0,0);
+	border:none;
+	color: rgb(168, 7, 58);
+	padding: 10px
+}
+
+h3{
+	margin-top:0;
+	padding-bottom: 10px;
+	background-color: white;
+	text-align: center;
+}
+
+div#note_icons{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+p, h4{
+	margin-left: 20%;
+	margin-right: 20%;
+	position: relative;
+}
+
+h4{
+	text-align: center;
+	background-color: #f1f1f1;
+	opacity: 0.6;
+	color: black;
+	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.about{
+	margin-top: -16%;
+}
